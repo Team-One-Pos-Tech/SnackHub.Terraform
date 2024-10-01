@@ -3,7 +3,8 @@ variable "nodeName" {
 }
 
 variable "account_id" {
-  default = "711388085545"
+  description = "AWS User id"
+  type        = string
 }
 
 variable "accessConfig" {
