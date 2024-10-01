@@ -6,9 +6,9 @@ locals {
   vpc_cidr = "10.0.0.0/16"
   azs      = slice(data.aws_availability_zones.available.names, 0, 3)
 
-  account_id = data.aws_caller_identity.current.account_id
+  account_id   = data.aws_caller_identity.current.account_id
   lab_role_arn = "arn:aws:iam::${local.account_id}:role/${var.LabRoleName}"
-  
+
   tags = {
     Example    = local.name
     GithubRepo = "https://github.com/Team-One-Pos-Tech/SnackHub"
