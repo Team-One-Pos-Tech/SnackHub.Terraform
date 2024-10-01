@@ -17,7 +17,7 @@ locals {
 }
 
 resource "aws_eks_cluster" "snack_hub" {
-  name     = "${local.name}-cluster"
+  name     = "${local.name}-cluster-v1"
   role_arn = local.lab_role_arn
   version  = 1.31
 
