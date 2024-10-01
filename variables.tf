@@ -2,11 +2,6 @@ variable "nodeName" {
   default = "ng-snack-hub"
 }
 
-variable "account_id" {
-  description = "AWS User id"
-  type        = string
-}
-
 variable "accessConfig" {
   default = "API_AND_CONFIG_MAP"
 }
