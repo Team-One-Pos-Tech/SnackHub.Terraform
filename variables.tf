@@ -1,5 +1,5 @@
 variable "nodeName" {
-  default = "ng-snack-hub"
+  default = "ng-snack-hub-v1"
 }
 
 variable "accessConfig" {
